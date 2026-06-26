@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Manager — Project Management</title>
+  <meta name="description" content="Manager is a modern project management platform for agile teams. Track issues, plan sprints, and ship faster.">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Theme init: apply dark class before paint to prevent FOUC -->
+  <script>
+    (function() {
+      var theme = localStorage.getItem('manager-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (theme === 'dark' || (!theme && prefersDark)) {
+        document.documentElement.classList.add('dark');
+      }
+      // Theme toggle handler — wired up here so it works even before Angular boots
+      document.addEventListener('click', function(e) {
+        if (e.target && e.target.closest('#theme-toggle')) {
+          var html = document.documentElement;
+          var isDark = html.classList.toggle('dark');
+          localStorage.setItem('manager-theme', isDark ? 'dark' : 'light');
+        }
+      });
+    })();
+  </script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-50 font-[Inter,sans-serif] antialiased">
+  <app-root></app-root>
+</body>
+</html>

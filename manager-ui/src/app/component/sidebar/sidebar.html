@@ -1,0 +1,167 @@
+<!-- Sidebar Navigation -->
+<aside class="fixed top-14 left-0 bottom-0 w-64 z-40 flex flex-col
+              bg-white dark:bg-gray-900
+              border-r border-gray-200 dark:border-gray-800
+              overflow-y-auto">
+
+  <!-- Projects Section -->
+  <div class="px-3 pt-4 pb-2">
+    <p class="px-2 mb-1 text-[10px] font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500">
+      Projects
+    </p>
+
+    <!-- Active Project Item -->
+    <a href="/projects/alpha" id="nav-project-alpha"
+      class="flex items-center gap-2.5 px-2 py-2 rounded-lg mb-0.5
+             bg-violet-50 dark:bg-violet-950 text-violet-700 dark:text-violet-300 font-medium text-sm
+             group cursor-pointer">
+      <span class="w-5 h-5 rounded-md bg-violet-600 flex items-center justify-center text-white text-[10px] font-bold shrink-0">
+        A
+      </span>
+      <span class="truncate">Project Alpha</span>
+    </a>
+
+    <a href="/projects/beta" id="nav-project-beta"
+      class="flex items-center gap-2.5 px-2 py-2 rounded-lg mb-0.5
+             text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 text-sm transition-colors
+             group cursor-pointer">
+      <span class="w-5 h-5 rounded-md bg-emerald-500 flex items-center justify-center text-white text-[10px] font-bold shrink-0">
+        B
+      </span>
+      <span class="truncate">Project Beta</span>
+    </a>
+
+    <a href="/projects/gamma" id="nav-project-gamma"
+      class="flex items-center gap-2.5 px-2 py-2 rounded-lg mb-0.5
+             text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 text-sm transition-colors
+             group cursor-pointer">
+      <span class="w-5 h-5 rounded-md bg-amber-500 flex items-center justify-center text-white text-[10px] font-bold shrink-0">
+        G
+      </span>
+      <span class="truncate">Gamma Platform</span>
+    </a>
+
+    <button id="nav-add-project"
+      class="flex items-center gap-2.5 px-2 py-2 rounded-lg w-full
+             text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300
+             hover:bg-gray-100 dark:hover:bg-gray-800 text-sm transition-colors">
+      <svg class="w-5 h-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+      </svg>
+      <span>Add project</span>
+    </button>
+  </div>
+
+  <div class="mx-3 my-2 h-px bg-gray-100 dark:bg-gray-800"></div>
+
+  <!-- My Work Section -->
+  <div class="px-3 pb-2">
+    <p class="px-2 mb-1 text-[10px] font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500">
+      My Work
+    </p>
+
+    <a href="/" id="nav-dashboard"
+      class="flex items-center gap-2.5 px-2 py-2 rounded-lg mb-0.5
+             text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 text-sm transition-colors">
+      <svg class="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+      </svg>
+      <span>Dashboard</span>
+    </a>
+
+    <a href="/issues" id="nav-my-issues"
+      class="flex items-center gap-2.5 px-2 py-2 rounded-lg mb-0.5
+             text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 text-sm transition-colors">
+      <svg class="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2
+             M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2
+             m-6 9l2 2 4-4" />
+      </svg>
+      <span>My Issues</span>
+      <span class="ml-auto text-[11px] font-semibold bg-violet-100 dark:bg-violet-900 text-violet-600 dark:text-violet-300 px-1.5 py-0.5 rounded-full">12</span>
+    </a>
+
+    <a href="/sprints" id="nav-sprints"
+      class="flex items-center gap-2.5 px-2 py-2 rounded-lg mb-0.5
+             text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 text-sm transition-colors">
+      <svg class="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+      </svg>
+      <span>Sprints</span>
+    </a>
+  </div>
+
+  <!-- Active Project Sub-nav -->
+  <div class="mx-3 mb-2">
+    <div class="rounded-xl bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-700/50 p-2">
+      <p class="px-2 mb-1 text-[10px] font-semibold uppercase tracking-widest text-violet-500 dark:text-violet-400">
+        Project Alpha
+      </p>
+
+      <a href="/projects/alpha/board" id="nav-board"
+        class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg mb-0.5
+               text-gray-600 dark:text-gray-400 hover:bg-white dark:hover:bg-gray-800 text-sm transition-colors">
+        <svg class="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
+        </svg>
+        <span>Board</span>
+      </a>
+
+      <a href="/projects/alpha/backlog" id="nav-backlog"
+        class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg mb-0.5
+               text-gray-600 dark:text-gray-400 hover:bg-white dark:hover:bg-gray-800 text-sm transition-colors">
+        <svg class="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+        </svg>
+        <span>Backlog</span>
+      </a>
+
+      <a href="/projects/alpha/timeline" id="nav-timeline"
+        class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg mb-0.5
+               text-gray-600 dark:text-gray-400 hover:bg-white dark:hover:bg-gray-800 text-sm transition-colors">
+        <svg class="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+        </svg>
+        <span>Timeline</span>
+      </a>
+
+      <a href="/reports" id="nav-reports"
+        class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg
+               text-gray-600 dark:text-gray-400 hover:bg-white dark:hover:bg-gray-800 text-sm transition-colors">
+        <svg class="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+        </svg>
+        <span>Reports</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Bottom: Settings -->
+  <div class="mt-auto px-3 pb-4 border-t border-gray-100 dark:border-gray-800 pt-3">
+    <a href="/settings" id="nav-settings"
+      class="flex items-center gap-2.5 px-2 py-2 rounded-lg
+             text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 text-sm transition-colors">
+      <svg class="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+      </svg>
+      <span>Settings</span>
+    </a>
+
+    <!-- User profile strip -->
+    <div class="flex items-center gap-2.5 px-2 py-2 mt-1 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer transition-colors">
+      <div class="w-7 h-7 rounded-full bg-violet-600 flex items-center justify-center text-white text-[11px] font-semibold shrink-0">
+        AK
+      </div>
+      <div class="min-w-0">
+        <p class="text-sm font-medium text-gray-900 dark:text-gray-100 truncate">Ankit Kumar</p>
+        <p class="text-[11px] text-gray-400 truncate">ankit@example.com</p>
+      </div>
+    </div>
+  </div>
+</aside>
