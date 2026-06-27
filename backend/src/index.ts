@@ -2,11 +2,16 @@ import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import cookieParser from 'cookie-parser';
+import swaggerUi from 'swagger-ui-express';
 import { env } from './config/env';
 import apiRouter from './routes';
 import { errorHandler } from './middleware/error-handler';
+import swaggerDocument from '../swagger.json';
 
 const app = express();
+
+// Interactive Swagger UI Docs
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // Security Middlewares
 app.use(helmet());
